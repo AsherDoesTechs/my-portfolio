@@ -42,6 +42,14 @@ return (
             className="rounded-xl object-cover mb-4 shadow-lg mt-12 animate-rise-up animate-delay-1" 
           />
 
+           <p className="text-sm text-gray-400 mb-1">
+            <i className="fas fa-map-marker-alt"></i> Laurel, Batangas City
+          </p>
+          <p className="text-sm text-gray-400 mb-4">
+            <i className="fas fa-laptop-code"></i> I'm a Tech Enthusiast.
+          </p>
+
+          </p>
         </div>
       </div>
   </main>
