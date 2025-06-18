@@ -24,7 +24,7 @@ export default function Home() {
         {/*Profile Column*/}
         <div className="relative flex flex-col items-center text-center lg:text-left">
           <Image
-            src="/public/img/Logo.png"
+            src="/img/Logo.png"
             alt="Logo"
             width={96}
             height={148}
@@ -33,7 +33,7 @@ export default function Home() {
           />
 
           <Image
-            src="/public/img/Asher_Basco.jpg"
+            src="/img/Asher_Basco.jpg"
             alt="Developers_Profile"
             width={256}
             height={320}
