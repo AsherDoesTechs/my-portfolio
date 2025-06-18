@@ -49,8 +49,17 @@ return (
             <i className="fas fa-laptop-code"></i> I'm a Tech Enthusiast.
           </p>
 
-          </p>
+           <div className="border border-gray-400 p-4 rounded-lg w-full max-w-sm bg-[#111]">
+            <h5 className="text-white text-md font-bold mb-2">
+              Why Front-End Developer?
+            </h5>
+            <p className="text-sm text-gray-300">
+              The aspects of digital art inspire me to build a whole new world that only I can see. I lived to turn these masterpieces into reality, never thought that website and digital arts can be combined in a whole new level of Artistry.
+            </p>
+          </div>
+        </div>
+          
         </div>
       </div>
   </main>
-)
+);
