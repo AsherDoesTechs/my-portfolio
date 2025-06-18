@@ -6,11 +6,7 @@ import { useEffect } from "react";
 import Script from "next/script";
 
 export default function Home() {
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      require("/public/script.js");
-    }
-  }, []);
+  <Script src="/script.js" strategy="afterInteractive" />;
 
   return (
     <main className="px-4 py-6">
