@@ -1,5 +1,7 @@
 "use client";
 
+import Head from "next/head";
+import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import {
   FaMapMarkerAlt,
@@ -103,22 +105,35 @@ const Index = () => {
         <div className="relative flex flex-col items-center text-center lg:text-left">
           {/* Logo in Top Left */}
           <div
-            className="absolute top-0 left-0 w-24 h-24 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg cursor-pointer z-50 flex items-center justify-center text-white font-bold text-lg"
+            className="absolute top-0 left-0 w-24 h-24 bg-gradient-to-r rounded-lg cursor-pointer z-50 flex items-center justify-center text-white font-bold text-lg"
             onClick={() => window.location.reload()}
           >
-            AB
+            <Image
+              src="/img/Logo.png"
+              alt="Logo"
+              width={96}
+              height={96}
+              className="absolute top-0 left-0 cursor-pointer z-50"
+              onClick={() => window.location.reload()}
+            />
           </div>
 
           {/* Main Profile Image */}
-          <div className="w-64 h-80 bg-gradient-to-b from-gray-700 to-gray-900 rounded-xl mb-4 shadow-lg mt-12 animate-fade-in flex items-center justify-center">
-            <div className="text-6xl text-gray-400">👨‍💻</div>
+          <div className="w-64 h-80 bg-gradient-to-b rounded-xl mb-4 shadow-lg mt-12 animate-fade-in flex items-center justify-center">
+            <Image
+              src="/img/Asher_Basco.jpg"
+              alt="Asher Basco"
+              width={256}
+              height={320}
+              className="rounded-xl w-64 h-80 object-cover mb-4 shadow-lg mt-12 animate-rise-up animate-delay-1"
+            />
           </div>
 
           {/* Location and Role */}
-          <p className="text-sm text-gray-400 mb-1">
+          <p className="text-sm text-gray-400 mb-1 mt-4">
             <FaMapMarkerAlt className="inline mr-1" /> Laurel, Batangas City
           </p>
-          <p className="text-sm text-gray-400 mb-4">
+          <p className="text-sm text-gray-400 mb-4 mt-1">
             <FaLaptopCode className="inline mr-1" /> I'm a Tech Enthusiast.
           </p>
 
