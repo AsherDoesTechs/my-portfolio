@@ -21,5 +21,28 @@ return (
       <Script  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         strategy="afterInteractive"
       />
+
+      <div className="container mx-auto grid lg:grid-cols-2 gap-6">
+        {/*Profile Column*/}
+        <div className="relative flex flex-col items-center text-center lg:text-left">
+          <Image
+            src="/public/img/Logo.png" 
+            alt="Logo"
+            width={96}
+            height={148}
+            className="absolute top-0 left-0 cursor-pointer z-50"
+            onClick={() => location.reload()}
+            />
+
+          <Image
+            src="/public/img/Asher_Basco.jpg"
+            alt="Developers_Profile"
+            width={256}
+            height={320}
+            className="rounded-xl object-cover mb-4 shadow-lg mt-12 animate-rise-up animate-delay-1" 
+          />
+
+        </div>
+      </div>
   </main>
 )
