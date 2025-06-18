@@ -11,3 +11,12 @@ export default function Home() {
       require("/public/script.js");
     } 
 }, []); 
+
+return (
+  <main className="px-4 py-6">
+    <Script src="https://cdn.emailjs.com/dist/email.min.js"
+      strategy="beforeInteractive" 
+      />
+      <Script src="https://cdn.tailwindcss.com" strategy="beforeInteractive" />
+  </main>
+)
