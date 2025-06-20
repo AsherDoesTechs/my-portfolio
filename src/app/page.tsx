@@ -1,6 +1,6 @@
 "use client";
 
-import { usePathname } from "next/navigation";
+// import { usePathname } from "next/navigation";
 import Script from "next/script";
 import Head from "next/head";
 import Image from "next/image";
@@ -108,7 +108,7 @@ const Index = () => {
         "x-7MFrjK1UL6U2hRz" // Replace with your EmailJS public key
       )
       .then(
-        (result) => {
+        () => {
           setShowModal(true); // ✅ Show success modal
           setFormData({ name: "", email: "", message: "" });
 
@@ -145,12 +145,12 @@ const Index = () => {
           href="/img/2Techs.png"
           sizes="100x100"
         />
-        <script src="https://cdn.emailjs.com/dist/email.min.js" defer></script>
+        <Script src="https://cdn.emailjs.com/dist/email.min.js" defer />
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
           rel="stylesheet"
         />
-        <script src="https://cdn.tailwindcss.com"></script>
+        <Script src="https://cdn.tailwindcss.com" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -196,7 +196,8 @@ const Index = () => {
                 <FaMapMarkerAlt className="inline mr-1" /> Laurel, Batangas City
               </p>
               <p className="text-sm text-gray-400 mb-4 mt-1">
-                <FaLaptopCode className="inline mr-1" /> I'm a Tech Enthusiast.
+                <FaLaptopCode className="inline mr-1" /> I&apos;m a Tech
+                Enthusiast.
               </p>
 
               {/* Description Box */}
@@ -248,11 +249,11 @@ const Index = () => {
 
               {/* Hero Text */}
               <h1 className="text-4xl font-bold mb-2 animate-fade-in">
-                Hi! I'm ASHER BASCO
+                Hi! I&apos;m ASHER BASCO
               </h1>
               <p className="text-xl text-gray-300 mb-6 animate-fade-in">
-                I'm a Front-end Developer Focused on building an interactive and
-                functional website that suits your needs.
+                I&apos;m a Front-end Developer Focused on building an
+                interactive and functional website that suits your needs.
               </p>
 
               {/* Projects */}
@@ -300,9 +301,9 @@ const Index = () => {
               <div className="grid md:grid-cols-2 gap-6 items-center">
                 <div className="bg-gray-800 p-4 rounded-lg border border-gray-600">
                   <p className="text-gray-300 mb-4">
-                    I'm Asher Basco, a passionate Front-End Developer based in
-                    Laurel, Batangas. I blend creativity and technology to build
-                    elegant, user-friendly web interfaces.
+                    I&apos;m Asher Basco, a passionate Front-End Developer based
+                    in Laurel, Batangas. I blend creativity and technology to
+                    build elegant, user-friendly web interfaces.
                   </p>
                   <p className="text-gray-300">
                     My journey began with a love for digital art and evolved
