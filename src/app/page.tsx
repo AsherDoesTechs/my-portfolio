@@ -100,6 +100,7 @@ const Index = () => {
           name: formData.name,
           email: formData.email,
           message: formData.message,
+          time: new Date().toLocaleString(),
         },
         "x-7MFrjK1UL6U2hRz" // Replace with your EmailJS public key
       )
