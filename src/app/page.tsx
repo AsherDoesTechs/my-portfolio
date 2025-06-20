@@ -95,7 +95,9 @@ const Index = () => {
 
   const downloadCV = () => {
     toast.success("CV download started!");
-    // In a real app, this would trigger an actual download
+
+    const link = document.createElement("a");
+    link.href = "/cv.pdf";
   };
 
   return (
@@ -125,7 +127,7 @@ const Index = () => {
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
         />
       </Head>
-      <body className="px-4 py-6">
+      <div className="px-4 py-6">
         <div className="min-h-screen bg-black text-white px-4 py-6">
           <div className="container mx-auto grid lg:grid-cols-2 gap-6">
             {/* Left Column (Profile Info) */}
@@ -472,7 +474,7 @@ const Index = () => {
             </div>
           </section>
         </div>
-      </body>
+      </div>
     </>
   );
 };
