@@ -4,7 +4,6 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Head from "next/head";
-``;
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import {
@@ -129,7 +128,7 @@ const Index = () => {
 
     const link = document.createElement("a");
     link.href = "/doc/Asher_Basco_M_CV.pdf";
-    link.download = "Asher_Basco_M_CV.pdf";
+    link.download = "Asher M. Basco_CV.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
