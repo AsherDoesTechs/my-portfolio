@@ -404,7 +404,9 @@ const Index = () => {
                     <Image
                       src="https://code.visualstudio.com/assets/favicon.ico"
                       alt="VS Code"
-                      className="w-12 h-12 transition-transform duration-300 group-hover:-translate-y-2"
+                      width={32}
+                      height={32}
+                      className="transition-transform duration-300 group-hover:-translate-y-2"
                     />
                     <p className="mt-2 text-sm text-white">VS Code</p>
                   </div>
