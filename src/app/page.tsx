@@ -33,7 +33,6 @@ import {
   SiNodedotjs,
   SiExpress,
   SiMysql,
-  SiVsco,
   SiOpenjdk,
 } from "react-icons/si";
 import emailjs from "emailjs-com";
@@ -402,7 +401,7 @@ const Index = () => {
                     <p className="mt-2 text-sm">GitHub</p>
                   </div>
                   <div className="group flex flex-col items-center cursor-pointer">
-                    <img
+                    <Image
                       src="https://code.visualstudio.com/assets/favicon.ico"
                       alt="VS Code"
                       className="w-12 h-12 transition-transform duration-300 group-hover:-translate-y-2"
