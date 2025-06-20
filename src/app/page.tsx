@@ -4,6 +4,7 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Head from "next/head";
+``;
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import {
@@ -127,7 +128,7 @@ const Index = () => {
     toast.success("CV download started!");
 
     const link = document.createElement("a");
-    link.href = "/doc/Asher_Basco_M_cv.pdf";
+    link.href = "/doc/Asher_Basco_M_CV.pdf";
     link.download = "Asher M. Basco.pdf";
     document.body.appendChild(link);
     link.click();
