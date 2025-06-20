@@ -40,6 +40,9 @@ import emailjs from "emailjs-com";
 import { toast } from "sonner";
 
 const Index = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   const [activeSection, setActiveSection] = useState("home");
   const [formData, setFormData] = useState({
     name: "",
@@ -221,7 +224,7 @@ const Index = () => {
                       <button
                         key={item}
                         onClick={() => handleNavClick(item.toLowerCase())}
-                        className={`px-4 py-2 rounded-md cursor-pointer hover border transition-all duration-300 animate-fade-in ${
+                        className={`px-4 py-2 rounded-md cursor-pointer hover border transition-all duration-300 animate-fade-in scroll-mt-15 ${
                           activeSection === item.toLowerCase()
                             ? "bg-green-400 text-black border-green-400"
                             : "text-white border-gray-600 hover:border-green-400"
@@ -472,11 +475,12 @@ const Index = () => {
 
               {showModal && (
                 <div className="fixed left-1/2 top-1/2 z-50 transform -translate-x-1/2 -translate-y-1/2">
-                  <div className="bg-white text-black px-6 py-4 rounded-lg shadow-lg border border-gray-300 animate-fade-in-up">
-                    <h3 className="text-lg font-semibold">
-                      ✅ Message Sent Successfully! <br /> Will get back to you
-                      as Soon as Possible!!
-                    </h3>
+                  <div className="bg-white text-gray-800 px-8 py-6 rounded-xl shadow-2xl border border-gray-200 animate-fade-in-up max-w-sm w-full text-center">
+                    <h3 className="text-2xl font-bold mb-2">✅ Message Sent</h3>
+                    <p className="text-base font-medium">
+                      Thank you for reaching out. <br />
+                      I’ll get back to you as soon as possible!
+                    </p>
                   </div>
                 </div>
               )}
