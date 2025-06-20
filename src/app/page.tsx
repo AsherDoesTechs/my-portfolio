@@ -129,7 +129,7 @@ const Index = () => {
 
     const link = document.createElement("a");
     link.href = "/doc/Asher_Basco_M_CV.pdf";
-    link.download = "Asher M. Basco.pdf";
+    link.download = "Asher_Basco_M_CV.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
