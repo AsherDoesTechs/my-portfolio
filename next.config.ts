@@ -1,7 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['code.visualstudio.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'code.visualstudio.com',
+        pathname: '/**', // allows all image paths
+      },
+    ],
   },
 };
 

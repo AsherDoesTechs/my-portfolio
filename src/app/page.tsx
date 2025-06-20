@@ -3,7 +3,6 @@
 // import { usePathname } from "next/navigation";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Script from "next/script";
 import Head from "next/head";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
@@ -44,7 +43,6 @@ const Index = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
-  const [activeSection, setActiveSection] = useState("home");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -84,14 +82,6 @@ const Index = () => {
       url: "https://SimpleCalculator.com",
     },
   ];
-
-  const handleNavClick = (section: string) => {
-    setActiveSection(section);
-    const element = document.getElementById(section);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -260,9 +250,11 @@ const Index = () => {
                 data-aos-duration="1000" // optional: animation speed in ms
                 data-aos-delay="200" // optional: delay in ms
               >
-                <h1 className="text-4xl font-bold mb-2">Hi! I'm ASHER BASCO</h1>
+                <h1 className="text-4xl font-bold mb-2">
+                  Hi! I&apos;m ASHER BASCO
+                </h1>
                 <p className="text-xl text-gray-300">
-                  I'm a{" "}
+                  I&apos;m a{" "}
                   <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-emerald-400 to-lime-400 animate-text-glow">
                     Front-End Developer
                   </span>{" "}
