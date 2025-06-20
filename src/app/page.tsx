@@ -89,6 +89,7 @@ const Index = () => {
     });
   };
 
+  const [showModal, setShowModal] = useState(false);
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -106,8 +107,11 @@ const Index = () => {
       )
       .then(
         (result) => {
-          toast.success("Message sent successfully!");
+          setShowModal(true); // ✅ Show success modal
           setFormData({ name: "", email: "", message: "" });
+
+          // Auto-close after 3s
+          setTimeout(() => setShowModal(false), 3000);
         },
         (error) => {
           console.error(error.text);
@@ -460,11 +464,22 @@ const Index = () => {
                 />
                 <button
                   type="submit"
-                  className="md:col-span-2 bg-green-400 text-black font-semibold py-2 rounded hover:bg-green-500 transition-all duration-300 hover:shadow-lg"
+                  className="md:col-span-2 bg-green-400 text-black cursor-pointer hover font-semibold py-2 rounded hover:bg-green-500 transition-all duration-300 hover:shadow-lg"
                 >
                   Send Message
                 </button>
               </form>
+
+              {showModal && (
+                <div className="fixed left-1/2 top-1/2 z-50 transform -translate-x-1/2 -translate-y-1/2">
+                  <div className="bg-white text-black px-6 py-4 rounded-lg shadow-lg border border-gray-300 animate-fade-in-up">
+                    <h3 className="text-lg font-semibold">
+                      ✅ Message Sent Successfully! <br /> Will get back to you
+                      as Soon as Possible!!
+                    </h3>
+                  </div>
+                </div>
+              )}
 
               <div className="mt-6">
                 <p className="text-sm text-gray-400">Or reach out on:</p>
