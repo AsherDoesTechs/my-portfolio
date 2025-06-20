@@ -60,3 +60,38 @@ body {
 .animate-fade-in-up {
   animation: fadeInUp 0.4s ease-out forwards;
 }
+
+@keyframes neon-pulse {
+  0%, 100% {
+    box-shadow: 0 0 25px rgba(34, 197, 94, 0.6), 0 0 60px rgba(34, 197, 94, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(34, 197, 94, 0.9), 0 0 70px rgba(34, 197, 94, 0.6);
+  }
+}
+
+.neon-glow-pulse {
+  animation: neon-pulse 2s ease-in-out infinite;
+}
+
+
+.neon-glow {
+  box-shadow: 0 0 25px rgba(34, 197, 94, 0.6), 0 0 60px rgba(34, 197, 94, 0.3);
+}
+
+
+@layer utilities {
+  .animate-text-glow {
+    background-size: 200% 200%;
+    animation: glow-gradient 3s ease infinite;
+  }
+
+  @keyframes glow-gradient {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+}
