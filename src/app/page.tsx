@@ -1,5 +1,6 @@
 "use client";
 
+import Script from "next/script";
 import Head from "next/head";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
@@ -116,7 +117,6 @@ const Index = () => {
           href="/img/2Techs.png"
           sizes="100x100"
         />
-        <script src="/script.js"></script>
         <script src="https://cdn.emailjs.com/dist/email.min.js" defer></script>
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -139,7 +139,7 @@ const Index = () => {
             <div className="relative flex flex-col items-center text-center lg:text-left">
               {/* Logo in Top Left */}
               <div
-                className="absolute top-0 left-0 w-24 h-24 bg-gradient-to-r rounded-lg cursor-pointer z-50 flex items-center justify-center text-white font-bold text-lg"
+                className="absolute top-0 left-0 w-24 h-24 bg-gradient-to-r rounded-lg cursor-pointer z-50 flex items-center justify-center text-white font-bold text-lg animate-rise-up animate-delay-1"
                 onClick={() => window.location.reload()}
               >
                 <Image
