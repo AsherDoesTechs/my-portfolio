@@ -116,6 +116,7 @@ const Index = () => {
           href="/img/2Techs.png"
           sizes="100x100"
         />
+        <script src="/script.js"></script>
         <script src="https://cdn.emailjs.com/dist/email.min.js" defer></script>
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -194,7 +195,7 @@ const Index = () => {
                       <button
                         key={item}
                         onClick={() => handleNavClick(item.toLowerCase())}
-                        className={`px-4 py-2 rounded-md border transition-all duration-300 animate-fade-in ${
+                        className={`px-4 py-2 rounded-md cursor-pointer hover border transition-all duration-300 animate-fade-in ${
                           activeSection === item.toLowerCase()
                             ? "bg-green-400 text-black border-green-400"
                             : "text-white border-gray-600 hover:border-green-400"
@@ -210,7 +211,7 @@ const Index = () => {
                 {/* Download CV Button */}
                 <button
                   onClick={downloadCV}
-                  className="relative px-4 py-2 text-green-400 font-semibold rounded-md border-2 border-green-400 transition duration-300 ease-in-out hover:bg-green-500 hover:text-white group animate-fade-in"
+                  className="relative px-4 py-2 text-green-400 cursor-pointer hover font-semibold rounded-md border-2 border-green-400 transition duration-300 ease-in-out hover:bg-green-500 hover:text-white group animate-fade-in"
                   style={{ animationDelay: "0.5s" }}
                 >
                   <FaDownload className="inline mr-1" /> Download CV
