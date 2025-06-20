@@ -97,7 +97,11 @@ const Index = () => {
     toast.success("CV download started!");
 
     const link = document.createElement("a");
-    link.href = "/cv.pdf";
+    link.href = "/doc/Asher_Basco_M_cv.pdf";
+    link.download = "Asher M. Basco.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
