@@ -1,5 +1,6 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import Script from "next/script";
 import Head from "next/head";
 import Image from "next/image";
@@ -35,6 +36,7 @@ import {
   SiVsco,
   SiOpenjdk,
 } from "react-icons/si";
+import emailjs from "emailjs-com";
 import { toast } from "sonner";
 
 const Index = () => {
@@ -89,9 +91,28 @@ const Index = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate form submission
-    toast.success("Message sent successfully!");
-    setFormData({ name: "", email: "", message: "" });
+
+    emailjs
+      .send(
+        "service_90ucj38", // Replace with your actual EmailJS service ID
+        "template_9dujls1", // Replace with your EmailJS template ID
+        {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        },
+        "x-7MFrjK1UL6U2hRz" // Replace with your EmailJS public key
+      )
+      .then(
+        (result) => {
+          toast.success("Message sent successfully!");
+          setFormData({ name: "", email: "", message: "" });
+        },
+        (error) => {
+          console.error(error.text);
+          toast.error("Failed to send message. Please try again.");
+        }
+      );
   };
 
   const downloadCV = () => {
