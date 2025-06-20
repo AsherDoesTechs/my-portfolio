@@ -139,27 +139,27 @@ const Index = () => {
         <title>Asher Basco</title>
         <meta name="theme-color" content="#1a1a1a" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-          rel="icon"
-          type="image/x-icon"
-          href="/img/2Techs.png"
-          sizes="100x100"
-        />
-        <Script src="https://cdn.emailjs.com/dist/email.min.js" defer />
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-        />
-        <Script src="https://cdn.tailwindcss.com" />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-        />
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
-        />
       </Head>
+      <link
+        rel="icon"
+        type="image/x-icon"
+        href="/img/2Techs.png"
+        sizes="100x100"
+      />
+      <Script src="https://cdn.emailjs.com/dist/email.min.js" defer />
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+      />
+      <Script src="https://cdn.tailwindcss.com" />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+      />
       <div className="px-4 py-6">
         <div className="min-h-screen bg-black text-white px-4 py-6">
           <div className="container mx-auto grid lg:grid-cols-2 gap-6">
