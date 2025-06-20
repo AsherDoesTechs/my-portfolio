@@ -401,9 +401,13 @@ const Index = () => {
                     <FaGithub className="text-gray-400 text-4xl mx-auto transition-transform duration-300 group-hover:-translate-y-2" />
                     <p className="mt-2 text-sm">GitHub</p>
                   </div>
-                  <div className="group cursor-pointer">
-                    <SiVsco className="text-blue-500 text-4xl mx-auto transition-transform duration-300 group-hover:-translate-y-2" />
-                    <p className="mt-2 text-sm">VS Code</p>
+                  <div className="group flex flex-col items-center cursor-pointer">
+                    <img
+                      src="https://code.visualstudio.com/assets/favicon.ico"
+                      alt="VS Code"
+                      className="w-12 h-12 transition-transform duration-300 group-hover:-translate-y-2"
+                    />
+                    <p className="mt-2 text-sm text-white">VS Code</p>
                   </div>
                   <div className="group cursor-pointer">
                     <FaDiscord className="text-indigo-500 text-4xl mx-auto transition-transform duration-300 group-hover:-translate-y-2" />
