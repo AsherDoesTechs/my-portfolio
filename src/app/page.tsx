@@ -511,7 +511,7 @@ const Index = () => {
                     <FaInstagram />
                   </a>
                   <a
-                    href="https://github.com/AsherTechs"
+                    href="https://github.com/AsherDoesTechs"
                     className="text-gray-300 hover:text-gray-100 text-xl transition-colors"
                   >
                     <FaGithub />
