@@ -18,6 +18,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="icon"
+          href="../app/icons/Black.ico"
+          type="image/png"
+          sizes="32x32"
+        />
+      </head>
       <body
         className={`${inter.className} bg-gradient-to-br from-[#0f0f0f] via-[#1a1a1a] to-[#111111]`}
       >
