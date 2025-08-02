@@ -20,7 +20,6 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaJs,
-  FaBootstrap,
   FaGitAlt,
   FaGithub,
   FaDiscord,
@@ -29,13 +28,7 @@ import {
   FaLinkedin,
   FaInstagram,
 } from "react-icons/fa";
-import {
-  SiTailwindcss,
-  SiNodedotjs,
-  SiExpress,
-  SiMysql,
-  SiOpenjdk,
-} from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs, SiMysql, SiReact } from "react-icons/si";
 import emailjs from "emailjs-com";
 import { toast } from "sonner";
 
@@ -385,16 +378,12 @@ const Index = () => {
                       <p className="text-xs mt-1">JavaScript</p>
                     </div>
                     <div className="group transition-transform duration-300 hover:scale-125">
-                      <FaBootstrap className="text-purple-500 text-3xl mx-auto" />
-                      <p className="text-xs mt-1">Bootstrap</p>
+                      <SiReact className="text-sky-400 text-3xl mx-auto animate-spin-slow" />
+                      <p className="text-xs mt-1">React</p>
                     </div>
                     <div className="group transition-transform duration-300 hover:scale-125">
-                      <SiTailwindcss className="text-cyan-400 text-3xl mx-auto" />
+                      <SiTailwindcss className="text-sky-400 text-3xl mx-auto animate-spin-slow" />
                       <p className="text-xs mt-1">Tailwind</p>
-                    </div>
-                    <div className="group transition-transform duration-300 hover:scale-125">
-                      <SiOpenjdk className="text-red-500 text-3xl mx-auto" />
-                      <p className="text-xs mt-1">Java</p>
                     </div>
                   </div>
                 </div>
@@ -406,12 +395,8 @@ const Index = () => {
                   </h3>
                   <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4 text-center">
                     <div className="group transition-transform duration-300 hover:scale-125">
-                      <SiNodedotjs className="text-green-500 text-3xl mx-auto" />
-                      <p className="text-xs mt-1">Node</p>
-                    </div>
-                    <div className="group transition-transform duration-300 hover:scale-125">
-                      <SiExpress className="text-gray-400 text-3xl mx-auto" />
-                      <p className="text-xs mt-1">Express</p>
+                      <SiNextdotjs className="text-black text-3xl mx-auto" />
+                      <p className="text-xs mt-1">Next.js</p>
                     </div>
                     <div className="group transition-transform duration-300 hover:scale-125">
                       <SiMysql className="text-blue-600 text-3xl mx-auto" />
