@@ -6,6 +6,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Asher Basco",
   description: "© 2025 Asher Basco. All rights reserved.",
+  icons: {
+    icon: "/Black.ico",
+  },
 };
 
 // Import and configure Inter font
@@ -18,14 +21,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <link
-          rel="icon"
-          href="../app/icons/Black.ico"
-          type="image/png"
-          sizes="32x32"
-        />
-      </head>
       <body
         className={`${inter.className} bg-gradient-to-br from-[#0f0f0f] via-[#1a1a1a] to-[#111111]`}
       >
