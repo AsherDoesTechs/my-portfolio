@@ -19,7 +19,6 @@ import {
 import {
   FaHtml5,
   FaCss3Alt,
-  FaJs,
   FaGitAlt,
   FaGithub,
   FaDiscord,
@@ -28,7 +27,13 @@ import {
   FaLinkedin,
   FaInstagram,
 } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs, SiMysql, SiReact } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiMysql,
+  SiReact,
+  SiTypescript,
+} from "react-icons/si";
 import emailjs from "emailjs-com";
 import { toast } from "sonner";
 
@@ -374,8 +379,8 @@ const Index = () => {
                       <p className="text-xs mt-1">CSS3</p>
                     </div>
                     <div className="group transition-transform duration-300 hover:scale-125">
-                      <FaJs className="text-yellow-400 text-3xl mx-auto" />
-                      <p className="text-xs mt-1">JavaScript</p>
+                      <SiTypescript className="text-yellow-400 text-3xl mx-auto" />
+                      <p className="text-xs mt-1">Typescript</p>
                     </div>
                     <div className="group transition-transform duration-300 hover:scale-125">
                       <SiReact className="text-sky-400 text-3xl mx-auto animate-spin-slow" />
