@@ -15,7 +15,6 @@ export default function HomePage() {
   return (
     <main className="bg-gray-50 text-black">
       {/* Soft off-white background */}
-      <Header />
       <Hero />
       <InfoCards />
       <FeaturedProjects />
