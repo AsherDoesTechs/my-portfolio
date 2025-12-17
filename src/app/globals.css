@@ -1,97 +1,30 @@
+@import "tailwindcss";
+
 html {
   scroll-behavior: smooth;
 }
 
-@import "tailwindcss";
-
 :root {
-  --background: #ffffff;
+  --background: #f7f7f7; /* light gray for sections */
   --foreground: #171717;
-}
-
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  line-height: 1.6;
 }
 
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Optional: Smooth scrollbar for horizontal timeline */
+::-webkit-scrollbar {
+  height: 8px;
 }
-
-.animate-fade-in {
-  animation: fadeInUp 0.8s ease-out forwards;
-  opacity: 0; /* needed for smooth fade */
+::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1; /* Tailwind slate-300 */
+  border-radius: 9999px;
 }
-
-.animate-delay-1 { animation-delay: 0.1s; }
-.animate-delay-2 { animation-delay: 0.2s; }
-.animate-delay-3 { animation-delay: 0.3s; }
-/* etc */
-
-
-@keyframes fadeInUps {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-in-up {
-  animation: fadeInUp 0.4s ease-out forwards;
-}
-
-@keyframes neon-pulse {
-  0%, 100% {
-    box-shadow: 0 0 25px rgba(34, 197, 94, 0.6), 0 0 60px rgba(34, 197, 94, 0.3);
-  }
-  50% {
-    box-shadow: 0 0 35px rgba(34, 197, 94, 0.9), 0 0 70px rgba(34, 197, 94, 0.6);
-  }
-}
-
-.neon-glow-pulse {
-  animation: neon-pulse 2s ease-in-out infinite;
-}
-
-
-.neon-glow {
-  box-shadow: 0 0 25px rgba(34, 197, 94, 0.6), 0 0 60px rgba(34, 197, 94, 0.3);
-}
-
-
-@layer utilities {
-  .animate-text-glow {
-    background-size: 200% 200%;
-    animation: glow-gradient 3s ease infinite;
-  }
-
-  @keyframes glow-gradient {
-    0%, 100% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-  }
+::-webkit-scrollbar-track {
+  background-color: #f1f5f9; /* Tailwind slate-100 */
+  border-radius: 9999px;
 }
