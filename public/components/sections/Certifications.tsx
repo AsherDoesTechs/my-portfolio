@@ -21,13 +21,13 @@ export default function Certifications() {
     },
     {
       title: "Virtual AI Camp 2025",
-      tech: "React • Hooks • State Management",
+      tech: "Leveraging Business • Machine Learning • AI For the Future",
       position: "Participant",
       link: "/img/certificates/Daffodil.png",
     },
     {
       title: "Databiz Conference 2024",
-      tech: "Node.js • APIs • Database Integration",
+      tech: "Data Science • Business Analytics • Aritificial Intelligence",
       position: "Participant",
       link: "/img/certificates/Databiz.png", // Added link here
     },
