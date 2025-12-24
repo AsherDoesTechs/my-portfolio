@@ -1,6 +1,15 @@
+/**
+ * @license
+ * Copyright (c) 2025 [Your Full Name]. All rights reserved.
+ * * This source code and all associated files are proprietary and confidential.
+ * Unauthorized copying, distribution, or modification of this file,
+ * via any medium, is strictly prohibited.
+ *
+ * For licensing inquiries or permission, contact: [Asherbasco93@gmail.com]
+ */
+
 "use client";
 
-import Header from "../../public/components/sections/Header";
 import Hero from "../../public/components/sections/Hero";
 import InfoCards from "../../public/components/sections/InfoCards";
 import FeaturedProjects from "../../public/components/sections/DevelopedProjects";

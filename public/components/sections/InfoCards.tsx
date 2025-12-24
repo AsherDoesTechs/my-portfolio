@@ -3,7 +3,7 @@ import { FaUser, FaBriefcase, FaHeart } from "react-icons/fa";
 
 export default function InfoCards() {
   return (
-    <section className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-6 mb-24">
+    <section className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-6 mt-5 mb-24">
       <Card title="Who I Am" icon={<FaUser />}>
         I’m a passionate IT student and tech enthusiast who loves exploring
         programming, experimenting with new tools, and building small projects
