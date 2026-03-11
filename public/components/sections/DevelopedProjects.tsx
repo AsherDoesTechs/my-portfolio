@@ -39,7 +39,7 @@ const iconMap: Record<string, { icon: IconType; color: string }> = {
 
 export default function FeaturedProjects() {
   // SET THIS TO 'true' TO REVEAL YOUR PROJECTS
-  const isPublic = false;
+  const isPublic = true;
 
   const projects = [
     {
@@ -93,7 +93,7 @@ export default function FeaturedProjects() {
       ],
       tech: "React • Vite • TypeScript • Tailwind",
       icons: ["react", "vite", "typescript", "tailwindcss"],
-      link: "#",
+      link: "midnight-cafe-nu.vercel.app",
       img: "/img/projects/CafeWebsite.png",
     },
   ];

@@ -20,7 +20,7 @@ export default function Hero() {
   // Destructure visible along with countdown and isBirthday
   const { countdown, isBirthday, visible } = useBirthdayCountdown(
     theme,
-    testMode
+    testMode,
   );
 
   return (
@@ -54,8 +54,9 @@ export default function Hero() {
           </p>
 
           <a
-            href="/Basco_Asher_M_CV.pdf"
-            download
+            href="/Asher_Basco_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className={`inline-block px-6 py-3 rounded-md border transition ${
               theme === "default"
                 ? "border-black hover:bg-black hover:text-white"
