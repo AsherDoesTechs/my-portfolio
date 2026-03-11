@@ -43,7 +43,7 @@ export default function FeaturedProjects() {
   const projects = [
     {
       title: "SanRoom: Schedule Management System",
-      status: "On Development",
+      status: "",
       comingSoon: true,
       description:
         "A smart, role-based schedule and room management platform for schools and organizations with automated notifications.",
@@ -53,8 +53,8 @@ export default function FeaturedProjects() {
       img: "/img/projects/SanRoom.png",
     },
     {
-      title: "Inventory System",
-      status: "On Development",
+      title: "JavaFX Desktop Inventory System",
+      status: "",
       comingSoon: false,
       description:
         "Full-stack Inventory System for real-time tracking and detailed analytics in fast-paced environments.",
@@ -65,7 +65,7 @@ export default function FeaturedProjects() {
     },
     {
       title: "Dev-Linked",
-      status: "On Development",
+      status: "",
       comingSoon: true,
       description:
         "A next-gen social space for developers to share logs, code snippets, and collaborate with secure authentication.",
@@ -76,7 +76,7 @@ export default function FeaturedProjects() {
     },
     {
       title: "FreshFlow",
-      status: "On Development",
+      status: "",
       comingSoon: true,
       description:
         "Optimizing workflow and resource management for modern teams with real-time updates.",
@@ -87,7 +87,7 @@ export default function FeaturedProjects() {
     },
     {
       title: "Midnight Cafe",
-      status: "On Development",
+      status: "",
       comingSoon: true,
       description: [
         "Interactive booking experience",
@@ -135,10 +135,6 @@ export default function FeaturedProjects() {
                 key={index}
                 className="group relative bg-white border rounded-xl p-6 shadow-sm hover:shadow-md transition flex flex-col min-h-[420px]"
               >
-                <div className="absolute top-4 right-4 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider border bg-amber-50 text-amber-700 border-amber-200">
-                  {project.status}
-                </div>
-
                 {/* IMAGE */}
                 <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden border bg-gray-50">
                   <Image
