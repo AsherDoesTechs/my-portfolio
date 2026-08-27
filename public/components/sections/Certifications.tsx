@@ -17,7 +17,7 @@ export default function Certifications() {
       title: "SQL Associate",
       tech: "Database Management • SQL • Data Querying",
       position: "DataCamp Certified",
-      link: "/img/certificates/SQL_Certificate.pdf",
+      link: "/img/certificates/SQL_Certificate.jpg",
       icon: SiDatacamp,
       iconColor: "text-[#05192D]",
     },

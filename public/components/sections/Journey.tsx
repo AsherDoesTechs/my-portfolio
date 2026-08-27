@@ -3,11 +3,12 @@
 export default function Journey() {
   const journeyData = [
     { time: "July 2023 - Present", title: "Computer Systems Servicing NCII" },
-    { time: "2023", title: "Hello World! 🌟" },
+    { time: "2023", title: "Hello World!" },
     { time: "2023", title: "First Stock Management Inventory in Java" },
     { time: "2024", title: "First GUI in Java" },
-    { time: "2024", title: "First Website 🌐" },
+    { time: "2024", title: "First Website" },
     { time: "2025", title: "Ongoing Projects & Continuous Improvement" },
+    { time: "2026", title: "Intern as a Software Engineer" },
   ];
 
   return (
