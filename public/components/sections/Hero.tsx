@@ -71,7 +71,7 @@ export default function Hero() {
               theme === "default" ? "text-gray-500" : "text-white/70"
             }`}
           >
-            PDF • Updated 2025
+            PDF • Updated 2026
           </p>
 
           {/* Seasonal / birthday greeting */}
