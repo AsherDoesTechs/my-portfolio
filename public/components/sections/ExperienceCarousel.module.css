@@ -1,0 +1,783 @@
+.experienceSection {
+  width: 100%;
+  padding: 100px 24px;
+  background: #f9fafb;
+  color: #111827;
+}
+
+.experienceContainer {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.experienceHeader {
+  max-width: 680px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.experienceLabel {
+  display: inline-block;
+  margin-bottom: 14px;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+
+  color: #6b7280;
+}
+
+.experienceHeader h2 {
+  margin: 0;
+
+  font-size: clamp(2.3rem, 5vw, 4rem);
+  line-height: 1;
+
+  font-weight: 700;
+  letter-spacing: -0.05em;
+}
+
+.experienceHeader h2 span {
+  color: #6b7280;
+}
+
+.experienceHeader p {
+  max-width: 580px;
+  margin: 22px auto 0;
+
+  color: #6b7280;
+
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* =========================================
+   CAROUSEL
+========================================= */
+
+.carouselWrapper {
+  position: relative;
+
+  width: 100%;
+  min-height: 590px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: visible;
+}
+
+/*
+   The three cards are positioned
+   over the same carousel area.
+*/
+
+.carouselTrack {
+  position: relative;
+
+  width: 100%;
+  height: 590px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  perspective: 1200px;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.experienceCard {
+  position: absolute;
+
+  width: min(650px, 58vw);
+
+  overflow: hidden;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 22px;
+
+  background: #ffffff;
+
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+
+  cursor: pointer;
+
+  user-select: none;
+
+  transition:
+    transform 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.65s ease,
+    filter 0.65s ease,
+    box-shadow 0.65s ease;
+
+  animation: carouselAppear 0.65s ease;
+}
+
+@keyframes carouselAppear {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* =========================================
+   LEFT CARD
+========================================= */
+
+.experienceCard.left {
+  transform: translateX(-56%) scale(0.72);
+
+  opacity: 0.62;
+
+  z-index: 1;
+
+  filter: brightness(0.8);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* =========================================
+   CENTER CARD
+========================================= */
+
+.experienceCard.center {
+  transform: translateX(0) scale(1);
+
+  opacity: 1;
+
+  z-index: 3;
+
+  filter: brightness(1);
+
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================================
+   RIGHT CARD
+========================================= */
+
+.experienceCard.right {
+  transform: translateX(56%) scale(0.72);
+
+  opacity: 0.62;
+
+  z-index: 1;
+
+  filter: brightness(0.8);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* =========================================
+   CARD HOVER
+========================================= */
+
+.experienceCard.left:hover {
+  transform: translateX(-56%) scale(0.77);
+
+  opacity: 0.82;
+}
+
+.experienceCard.right:hover {
+  transform: translateX(56%) scale(0.77);
+
+  opacity: 0.82;
+}
+
+.experienceCard.center:hover {
+  transform: translateX(0) scale(1.015);
+
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.18);
+}
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.imageWrapper {
+  position: relative;
+
+  width: 100%;
+  height: 370px;
+
+  overflow: hidden;
+
+  background: #e5e7eb;
+}
+
+.experienceImage {
+  object-fit: cover;
+
+  transition:
+    transform 0.7s ease,
+    filter 0.7s ease;
+}
+
+.experienceCard.center:hover .experienceImage {
+  transform: scale(1.025);
+}
+
+/* =========================================
+   IMAGE HINT
+========================================= */
+
+.imageHint {
+  position: absolute;
+
+  left: 50%;
+  bottom: 18px;
+
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 9px 15px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 999px;
+
+  background: rgba(0, 0, 0, 0.6);
+
+  color: white;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  opacity: 0;
+
+  transition: opacity 0.3s ease;
+
+  pointer-events: none;
+}
+
+.experienceCard.center:hover .imageHint {
+  opacity: 1;
+}
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.cardContent {
+  padding: 24px 26px 26px;
+}
+
+.cardMeta {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  margin-bottom: 10px;
+
+  color: #9ca3af;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.cardContent h3 {
+  margin: 0;
+
+  font-size: 23px;
+  line-height: 1.2;
+
+  font-weight: 700;
+
+  letter-spacing: -0.025em;
+}
+
+.cardContent p {
+  margin: 12px 0 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+/* =========================================
+   NAVIGATION BUTTONS
+========================================= */
+
+.carouselButton {
+  position: absolute;
+
+  z-index: 10;
+
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: #111827;
+
+  font-size: 20px;
+
+  cursor: pointer;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.carouselButton:hover {
+  transform: scale(1.1);
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.carouselButton:active {
+  transform: scale(0.94);
+}
+
+.carouselButton:focus-visible {
+  outline: 3px solid #9ca3af;
+  outline-offset: 3px;
+}
+
+.previousButton {
+  left: 2%;
+}
+
+.nextButton {
+  right: 2%;
+}
+
+/* =========================================
+   INDICATORS
+========================================= */
+
+.indicators {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  margin-top: 20px;
+}
+
+.indicator {
+  width: 7px;
+  height: 7px;
+
+  padding: 0;
+
+  border: none;
+  border-radius: 999px;
+
+  background: #d1d5db;
+
+  cursor: pointer;
+
+  transition:
+    width 0.3s ease,
+    background 0.3s ease;
+}
+
+.indicator:hover {
+  background: #9ca3af;
+}
+
+.indicator.active {
+  width: 26px;
+
+  background: #111827;
+}
+
+/* =========================================
+   HELPER
+========================================= */
+
+.carouselHint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-top: 20px;
+
+  color: #9ca3af;
+
+  font-size: 12px;
+}
+
+.carouselHint span:first-child,
+.carouselHint span:last-child {
+  font-size: 14px;
+}
+
+/* =========================================
+   FULLSCREEN
+========================================= */
+
+.fullscreenOverlay {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 50px;
+
+  background: rgba(0, 0, 0, 0.94);
+
+  backdrop-filter: blur(8px);
+
+  animation: overlayAppear 0.25s ease;
+}
+
+@keyframes overlayAppear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* =========================================
+   FULLSCREEN IMAGE
+========================================= */
+
+.fullscreenImageWrapper {
+  position: relative;
+
+  width: min(1200px, 90vw);
+  height: min(75vh, 800px);
+
+  animation: imageAppear 0.3s ease;
+}
+
+@keyframes imageAppear {
+  from {
+    transform: scale(0.94);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.fullscreenImage {
+  object-fit: contain;
+}
+
+/* =========================================
+   FULLSCREEN CAPTION
+========================================= */
+
+.fullscreenCaption {
+  position: absolute;
+
+  left: 50%;
+  bottom: 25px;
+
+  transform: translateX(-50%);
+
+  text-align: center;
+
+  color: white;
+
+  pointer-events: none;
+}
+
+.fullscreenCaption h3 {
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.fullscreenCaption p {
+  margin: 5px 0 0;
+
+  color: #d1d5db;
+
+  font-size: 12px;
+}
+
+/* =========================================
+   CLOSE BUTTON
+========================================= */
+
+.closeButton {
+  position: absolute;
+
+  top: 25px;
+  right: 25px;
+
+  z-index: 10000;
+
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  color: white;
+
+  font-size: 30px;
+  font-weight: 300;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.closeButton:hover {
+  background: rgba(255, 255, 255, 0.2);
+
+  transform: scale(1.08);
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+  .experienceCard {
+    width: min(580px, 62vw);
+  }
+
+  .experienceCard.left {
+    transform: translateX(-52%) scale(0.68);
+  }
+
+  .experienceCard.right {
+    transform: translateX(52%) scale(0.68);
+  }
+
+  .experienceCard.left:hover {
+    transform: translateX(-52%) scale(0.73);
+  }
+
+  .experienceCard.right:hover {
+    transform: translateX(52%) scale(0.73);
+  }
+
+  .previousButton {
+    left: 0;
+  }
+
+  .nextButton {
+    right: 0;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+  .experienceSection {
+    padding: 70px 16px;
+  }
+
+  .experienceHeader {
+    margin-bottom: 30px;
+  }
+
+  .experienceHeader h2 {
+    font-size: 2.5rem;
+  }
+
+  .carouselWrapper {
+    min-height: 470px;
+  }
+
+  .carouselTrack {
+    height: 470px;
+  }
+
+  /*
+   * On mobile, side cards become smaller
+   * but remain visible.
+   */
+
+  .experienceCard {
+    width: 82vw;
+
+    border-radius: 18px;
+  }
+
+  .experienceCard.left {
+    transform: translateX(-47%) scale(0.62);
+
+    opacity: 0.45;
+  }
+
+  .experienceCard.right {
+    transform: translateX(47%) scale(0.62);
+
+    opacity: 0.45;
+  }
+
+  .experienceCard.left:hover {
+    transform: translateX(-47%) scale(0.66);
+  }
+
+  .experienceCard.right:hover {
+    transform: translateX(47%) scale(0.66);
+  }
+
+  .imageWrapper {
+    height: 270px;
+  }
+
+  .cardContent {
+    padding: 18px 20px 20px;
+  }
+
+  .cardContent h3 {
+    font-size: 19px;
+  }
+
+  .cardContent p {
+    font-size: 13px;
+  }
+
+  .carouselButton {
+    width: 40px;
+    height: 40px;
+
+    font-size: 16px;
+  }
+
+  .previousButton {
+    left: 0;
+  }
+
+  .nextButton {
+    right: 0;
+  }
+
+  .carouselHint {
+    display: none;
+  }
+
+  .fullscreenOverlay {
+    padding: 20px;
+  }
+
+  .fullscreenImageWrapper {
+    width: 95vw;
+    height: 70vh;
+  }
+
+  .closeButton {
+    top: 15px;
+    right: 15px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+  .experienceHeader h2 {
+    font-size: 2.2rem;
+  }
+
+  .experienceHeader p {
+    font-size: 14px;
+  }
+
+  .experienceCard.left {
+    transform: translateX(-43%) scale(0.55);
+  }
+
+  .experienceCard.right {
+    transform: translateX(43%) scale(0.55);
+  }
+
+  .experienceCard.left:hover {
+    transform: translateX(-43%) scale(0.59);
+  }
+
+  .experienceCard.right:hover {
+    transform: translateX(43%) scale(0.59);
+  }
+
+  .imageWrapper {
+    height: 240px;
+  }
+
+  .carouselWrapper {
+    min-height: 440px;
+  }
+
+  .carouselTrack {
+    height: 440px;
+  }
+}
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+.experienceCard:focus-visible {
+  outline: 3px solid #9ca3af;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .experienceCard,
+  .experienceImage,
+  .carouselButton,
+  .indicator,
+  .fullscreenOverlay,
+  .fullscreenImageWrapper {
+    animation: none;
+    transition: none;
+  }
+}

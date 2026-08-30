@@ -15,6 +15,7 @@ import InfoCards from "../../public/components/sections/InfoCards";
 import FeaturedProjects from "../../public/components/sections/DevelopedProjects";
 import Journey from "../../public/components/sections/Journey";
 import TechStacks from "../../public/components/sections/TechStack";
+import ExperienceCarousel from "../../public/components/sections/ExperienceCarousel";
 import Certifications from "../../public/components/sections/Certifications";
 import TestimonialsPreview from "../../public/components/sections/TestimonialsPreview";
 import Contact from "../../public/components/sections/Contact";
@@ -29,6 +30,7 @@ export default function HomePage() {
       <FeaturedProjects />
       <Journey />
       <TechStacks />
+      <ExperienceCarousel />
       <Certifications />
       <TestimonialsPreview />
       <Contact />
