@@ -9,10 +9,26 @@ import {
 } from "react-icons/hi2";
 import { SiDatacamp, SiOpenai, SiDatabricks } from "react-icons/si";
 
+import type { IconType } from "react-icons";
+
+type Certification = {
+  title: string;
+  tech: string;
+  position: string;
+  link: string | null;
+  icon?: IconType;
+  iconColor?: string;
+  uli?: string;
+  imageLogo?: string;
+  imageScale?: string;
+  logoType?: "wide";
+  pending?: boolean;
+};
+
 export default function Certifications() {
   const [copied, setCopied] = useState(false);
 
-  const certifications = [
+  const certifications: Certification[] = [
     {
       title: "SQL Associate",
       tech: "Database Management • SQL • Data Querying",
@@ -47,12 +63,11 @@ export default function Certifications() {
       iconColor: "text-orange-600",
     },
     {
-      title: "PHILNITS IP",
-      tech: "Information Technology • Programming • IT Fundamentals",
-      position: "Passed",
-      link: null,
+      title: "PHILNITS IT Passport",
+      tech: "Information Technology • Programming • IT Fundamentals • DSA • Networking • Security",
+      position: "PHILNITS Certified",
+      link: "/img/certificates/PHILNITS.jpg",
       imageLogo: "/Icons/PhilNITS.jpg",
-      pending: true,
       logoType: "wide",
     },
   ];
